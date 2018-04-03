@@ -14,7 +14,7 @@ var routes=require('./routes/route');
 
 var mongoose=require('mongoose');
 var session=require('express-session');
-mongoose.connect('mongodb://test:test@ds213239.mlab.com:13239/codezone');
+mongoose.connect('connect to your database');
 require('./config/passport');
 
 
