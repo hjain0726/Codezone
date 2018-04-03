@@ -1,0 +1,50 @@
+iframe{
+	display:none;
+}
+
+
+button{
+	background-color:green;
+	float:right;
+	border:0px;
+	padding:3px 3px 3px 3px;
+	display: inline-block;
+	text-align: center;
+	color: white;
+	text-decoration:underline;
+	margin-left:10px;
+}
+
+button:hover{
+	box-shadow:0px 0px 100px green;
+}
+
+.next {
+    background-color: #4CAF50;
+    color: white;
+		float:right;
+}
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+#Answer{
+	background-color:green;
+	float:right;
+	border:0px;
+	padding:3px 3px 3px 3px;
+	display: inline-block;
+	text-align: center;
+	color: white;
+	text-decoration:underline;
+	margin-left:10px;
+}
+
+iframe{
+	display:none;
+}
+
+button:hover#Answer{
+	box-shadow:0px 0px 10px red;
+	background-color:red;
+}

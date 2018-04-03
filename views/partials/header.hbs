@@ -1,0 +1,41 @@
+<!--header-->
+
+<div id="header">
+<h1><i class="fa fa-laptop" style="font-size:56px;color:#00FDFD"></i> Code Zone <!--<i class="fa fa-laptop" style="font-size:56px;color:#00FDFD"></i>--></h1>
+</div>
+
+<!--nav-bar-->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/home" style="font-size:20px;color:white"><i class="fa fa-home" style="color:white">&nbsp;</i>Home&nbsp;</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      {{# if login}}
+      <ul class="nav navbar-nav">
+        <li><a href="/c" style="font-size:15px;color:white">C/C++</a></li>
+        <li><a href="/ds" style="font-size:15px;color:white">Data Structures</a></li>
+      </ul>
+      <ul class="nav navbar-nav  navbar-right ">
+        <li><a href="/user/profile" style="font-size:15px;color:white"><i class="fa fa-user" style="color:white"></i>&nbsp;User Profile</a></li>
+        <li><a href="/logout" style="font-size:15px;color:white"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout</a></li>
+        <li><a href="/about" style="font-size:15px;color:white">About us</a></li>
+    </ul>
+      {{else}}
+
+      <ul class="nav navbar-nav  navbar-right ">
+   <li><a href="/user/signup" style="font-size:15px;color:white"><i class="fa fa-user" style="color:white"></i>&nbsp;Sign Up</a></li>
+   <li><a href="/user/signin" style="font-size:15px;color:white"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Sign In</a></li>
+   <li><a href="/about" style="font-size:15px;color:white">About us</a></li>
+ </ul>
+{{/if}}
+    </div>
+  </div>
+</nav>
+</div>
